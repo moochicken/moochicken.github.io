@@ -1,0 +1,121 @@
+@font-face {
+	font-family: 'titlefont';
+	src: url('font/nyala.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+body {
+	background-color: #000000;
+	margin: 0;
+	width: 100%;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 9vh;
+	background: #4b4b4b;
+}
+
+.name {
+	color: #9f3202;
+	text-shadow:
+	-1px -1px 0 #fff,  
+	1px -1px 0 #fff,
+	-1px 1px 0 #fff,
+	1px 1px 0 #fff;
+	font-family: 'titlefont';
+	font-weight: bold;
+	padding-left: 0.8vw;
+	font-size: 9vh;
+	line-height: 9vh;
+}
+
+.headertransition {
+	background: #8c8c8c;
+	width: 100vw;
+	top: 9vh;
+	position: fixed;
+	height: 1vh;
+}
+
+#aboutcontact {
+	color: #ffffff;
+	float: right;
+	margin: auto;
+	line-height: 9vh;
+	margin: 0;
+	padding-right: 5vw;
+	font-size: 2.5vh;
+}
+
+.link {
+	position: fixed;
+	height: 27vw;
+	width: 27vw;
+	background-size: 27vw 27vw;
+	top: calc(50vh - 13.5vw);
+}
+
+#link-a {
+	left: 18vw;
+	background-image: url("kids_on_campus_gray.png");
+}
+
+#link-a:hover {
+	background-image: url("kids_on_campus.png");
+}
+
+#link-b {
+	right: 18vw;
+	font-size: 27vw;
+	color: #4b4b4b;
+}
+
+#link-b:hover {
+	color: #f89839;
+}
+
+#aboutcontact {
+	float: right;
+	margin: auto;
+	line-height: 8.5vh;
+	margin: 0;
+	padding-right: 5vw;
+}
+
+.popup {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+}
+
+#about, #contact {
+	position: fixed;
+	width: 50%;
+	left: 25%;
+	height: 33%;
+	top: 33%;
+	background-color: #000000;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #FFFFFF;
+	color: #FFFFFF;
+	z-index: 1;
+	text-align: center;
+}

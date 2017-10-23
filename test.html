@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>Matt Herman</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="jquery.backstretch.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+        <style>
+            @font-face {
+                font-family: 'titlefont';
+                src: url('nyala.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+            html {
+                font-family: 'titlefont';
+                font-weight: bold;
+                width: 100%;
+            }
+            html a {
+                text-decoration: none;
+            }
+            body {
+                background-color: #000;
+                margin-top: 0px;
+                margin-right: 0px;
+                margin-bottom: 0px;
+                margin-left: 0px;
+                width: 100%;
+            }
+            .header {
+                margin: 0 auto;
+                font-size: 4vw;
+                width: 100%;
+                padding: 10px 0;
+                text-align: center;
+                background: #8c8c8c;
+                color: #9f3202;
+                text-shadow:
+                   -1px -1px 0 #fff,  
+                   1px -1px 0 #fff,
+                   -1px 1px 0 #fff,
+                   1px 1px 0 #fff;
+                box-shadow: 0 30px 30px 0 black;
+            }
+            .link-container {
+                margin-top: 8vw;
+                width: 100%;
+                text-align: center;
+            }
+            .link {
+                margin: 0 auto;
+                display: inline-block;
+                vertical-align: text-top;
+            }
+            .link-a {
+                background-image: url("kids_on_campus_gray.png");
+                background-size: 30vw 30vw;
+                width: 30vw;
+                height: 30vw;
+            }
+            .link-a:hover {
+                background-image: url("kids_on_campus.png");
+                background-size: 30vw 30vw;
+            }
+            .link-b {
+                font-size: 28vw;
+                color: #4b4b4b;
+            }
+            .link-b:hover {
+                color: #f89839;
+            }
+            .link-spacer {
+                width: 50px;
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            $.backstretch([
+                  "matt_website_bg_1.jpg"
+                , "matt_website_bg_2.jpg"
+                , "matt_website_bg_4.jpg"
+                , "matt_website_bg_5.jpg"
+                , "matt_website_bg_6.jpg"
+            ], {duration: 3000, fade: 750});
+        </script>
+        
+        <div class="header">
+            MATT HERMAN<br>
+        </div>
+        
+        <div class="link-container">
+            <div class="link">
+                <a href="https://www.youtube.com/channel/UCuzAfmDrNT7O0cz6yeemKUQ"><img class="link-a" src="transparent.png"></a>
+            </div>
+            <div class="link link-spacer"></div>
+            <div class="link">
+                <a class="fa fa-youtube link-b" href="https://www.youtube.com/channel/UCot9vB4XaMxR06kfWvOy5LA"></a>
+            </div>
+        </div>
+        
+    </body>
+</html>
