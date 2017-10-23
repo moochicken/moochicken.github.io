@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Matt Herman</title>
+        <script type="text/javascript" src="static/jquery.min.js"></script>   
+        <script type="text/javascript" src="static/jquery.backstretch.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+
+    <body>
+        <div class="header">
+            <span class="name">
+                MATT HERMAN
+            </span>
+            <span id="aboutcontact">
+                    <a class="fauxlink" id="aboutlink" href="#">about</a>
+                    <span> - </span>
+                    <a class="fauxlink" id="contactlink" href="#">contact</a>
+            </span>
+        </div>
+
+        <div class="headertransition"></div>
+
+        <a class="link" id="link-a" href="https://www.youtube.com/channel/UCuzAfmDrNT7O0cz6yeemKUQ"></a>
+        <a class="fa fa-youtube-square link" id="link-b" href="https://www.youtube.com/channel/UCot9vB4XaMxR06kfWvOy5LA"></a>
+
+        <div class="popup" id="aboutpopup">
+			<div id="about">
+				<p>
+					Matt Herman is a graduate of Washington University in St. Louis.
+				</p>
+				<p>
+					He may have also done other things...
+				</p>
+			</div>
+		</div>
+
+		<div class="popup" id="contactpopup">
+			<div id="contact">
+				<p>
+					Email: askmatt@forhis.email
+				</p>
+				<p>
+					Phone: (is this even something you'd put on a website?)
+				</p>
+			</div>
+		</div>
+
+        <script>
+            $.backstretch([
+                  "static/matt_website_bg_1.jpg"
+                , "static/matt_website_bg_2.jpg"
+                , "static/matt_website_bg_4.jpg"
+                , "static/matt_website_bg_5.jpg"
+                , "static/matt_website_bg_6.jpg"
+            ], {duration: 3000, fade: 750});
+
+        var aboutPopup = document.getElementById("aboutpopup")
+        var aboutLink = document.getElementById("aboutlink")
+        var contactPopup = document.getElementById("contactpopup")
+        var contactLink = document.getElementById("contactlink")
+
+        aboutLink.onclick = function() {
+            aboutPopup.style.display = "block";
+        }
+
+        aboutPopup.onclick = function() {
+            aboutPopup.style.display = "none";
+        }
+
+        contactLink.onclick = function() {
+            contactPopup.style.display = "block";
+        }
+
+        contactPopup.onclick = function() {
+            contactPopup.style.display = "none";
+        }
+        </script>
+
+    </body>
+</html>
