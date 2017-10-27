@@ -60,34 +60,39 @@ body {
 	font-size: 2.5vh;
 }
 
-.link {
-	position: fixed;
-	height: 27vw;
-	width: 27vw;
-	background-size: 27vw 27vw;
-	top: calc(50vh - 13.5vw);
+.linkcontainer {
+	top: 10vh;
+	width: 100vw;
+	height: 91vh;
+	display: inline-flex;
+	flex-direction: row;
 }
 
-#link-a {
-	left: 18vw;
+.link {
+	background-size: 27vw 27vw;
+	margin: auto;
+}
+
+.link-a {
+	order: 0;
 	background-image: url("kids_on_campus_gray.png");
 }
 
-#link-a:hover {
+.link-a:hover {
 	background-image: url("kids_on_campus.png");
 }
 
-#link-b {
-	right: 18vw;
+.link-b {
+	order: 1;
 	font-size: 27vw;
 	color: #4b4b4b;
 }
 
-#link-b:hover {
+.link-b:hover {
 	color: #f89839;
 }
 
-#aboutcontact {
+.aboutcontact {
 	float: right;
 	margin: auto;
 	line-height: 8.5vh;
@@ -105,7 +110,7 @@ body {
 	background-color: rgba(0,0,0,0.4);
 }
 
-#about, #contact {
+.about, .contact {
 	position: fixed;
 	width: 50%;
 	left: 25%;
