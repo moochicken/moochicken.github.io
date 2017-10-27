@@ -66,18 +66,19 @@ body {
 	height: 91vh;
 	display: inline-flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .link {
-	background-size: 27vw 27vw;
+	background-size: 27vmax 27vmax;
 	top: 5vh;
 	margin: auto;
 }
 
 .link-a {
 	order: 0;
-	height: 27vw;
-	width: 27vw;
+	height: 27vmax;
+	width: 27vmax;
 	background-image: url("kids_on_campus_gray.png");
 }
 
@@ -87,7 +88,7 @@ body {
 
 .link-b {
 	order: 1;
-	font-size: 27vw;
+	font-size: 27vmax;
 	color: #4b4b4b;
 }
 
