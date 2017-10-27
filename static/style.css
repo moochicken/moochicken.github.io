@@ -38,7 +38,7 @@ body {
 	font-family: 'titlefont';
 	font-weight: bold;
 	padding-left: 0.8vw;
-	font-size: 9vh;
+	font-size: 9vmin;
 	line-height: 9vh;
 }
 
@@ -70,11 +70,14 @@ body {
 
 .link {
 	background-size: 27vw 27vw;
+	top: 5vh;
 	margin: auto;
 }
 
 .link-a {
 	order: 0;
+	height: 27vw;
+	width: 27vw;
 	background-image: url("kids_on_campus_gray.png");
 }
 
